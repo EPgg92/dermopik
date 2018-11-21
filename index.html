@@ -123,10 +123,28 @@
             padding-top: 50px;
             }
 
-            .wizard h3 {
-            margin-top: 0;
+            .wizard .tab-pane > ul {
+                position: relative;
+                text-align: center
             }
 
+            .wizard h3 {
+            margin-top: 0;
+            text-align: center;
+            }
+            .wizard p {
+                text-align: center;
+            }
+            .portfolio {
+             margin-bottom: -15px;
+            }
+
+            .portfolio .portfolio-item {
+            position: relative;
+            display: block;
+            max-width: 11rem;
+            margin-bottom: 15px;
+}
             @media( max-width : 585px ) {
             https://bootsnipp.com/snippets/featured/form-wizard-using-tabs
                 .wizard {
@@ -146,7 +164,6 @@
                 height: 50px;
                 line-height: 50px;
                 }
-file:///home/poggioe0/github/dermopik/index.html
                 .wizard li.active:after {
                 content: " ";
                 position: absolute;
@@ -194,6 +211,16 @@ file:///home/poggioe0/github/dermopik/index.html
         </script>
     </head>
     <body>
+            <div class="container">
+                <div class="row">
+                    <h3 style="text-align: center">dermopik</h3>
+                    <span class="">
+                            <img src="img/logo.svg" alt="">
+                    </span>
+                    
+
+                </div>
+            </div>
         <div class="container">
         	<div class="row">
         		<section>
@@ -253,7 +280,7 @@ file:///home/poggioe0/github/dermopik/index.html
                             <div class="tab-pane active" role="tabpanel" id="step1">
                                 <h3>Question 1</h3>
                                 <p>  Votre peau vous démange-t-elle fréquemment ? </p>
-                                <ul class="list-inline pull-right">
+                                <ul class="list-inline pull-center">
                                     <li><button type="button" class="btn btn-primary next-step">Oui</button></li>
                                     <li><button type="button" class="btn btn-primary next-step">Non</button></li>
                                 </ul>
@@ -261,7 +288,7 @@ file:///home/poggioe0/github/dermopik/index.html
                             <div class="tab-pane" role="tabpanel" id="step2">
                                 <h3>Question 2</h3>
                                 <p>Avez-vous eu une éruption cutanée semblable à celle de l'image ci-dessous sur les plis de vos coudes, derrière vos genoux ou devant vos chevilles ?</p>
-                                <ul class="list-inline pull-right">
+                                <ul class="list-inline pull-center">
                                     <li><button type="button" class="btn btn-default prev-step">Précédent</button></li>
                                     <li><button type="button" class="btn btn-primary next-step">Oui</button></li>
                                     <li><button type="button" class="btn btn-primary next-step">Non</button></li>
@@ -270,7 +297,7 @@ file:///home/poggioe0/github/dermopik/index.html
                             <div class="tab-pane" role="tabpanel" id="step3">
                                 <h3>Question 3</h3>
                                 <p>Avez-vous eu une éruption cutanée semblable à celle de l'image ci-dessous sur le dos de vos mains ?</p>
-                                <ul class="list-inline pull-right">
+                                <ul class="list-inline pull-center">
                                     <li><button type="button" class="btn btn-default prev-step">Précédent</button></li>
                                     <li><button type="button" class="btn btn-primary next-step">Oui</button></li>
                                     <li><button type="button" class="btn btn-primary next-step">Non</button></li>
@@ -279,7 +306,7 @@ file:///home/poggioe0/github/dermopik/index.html
                             <div class="tab-pane" role="tabpanel" id="step4">
                                 <h3>Question 4</h3>
                                 <p>Avez-vous eu une éruption cutanée semblable à celle de l'image ci-dessous sur les plis de vos coudes, derrière vos genoux ou devant vos chevilles ?</p>
-                                <ul class="list-inline pull-right">
+                                <ul class="list-inline pull-center">
                                     <li><button type="button" class="btn btn-default prev-step">Précédent</button></li>
                                     <li><button type="button" class="btn btn-primary next-step">Oui</button></li>
                                     <li><button type="button" class="btn btn-primary next-step">Non</button></li>
@@ -288,7 +315,7 @@ file:///home/poggioe0/github/dermopik/index.html
                             <div class="tab-pane" role="tabpanel" id="step5">
                                 <h3>Question 5</h3>
                                 <p>Avez-vous eu une éruption cutanée semblable à celle de l'image ci-dessous sur les plis de vos coudes, derrière vos genoux ou devant vos chevilles ?</p>
-                                <ul class="list-inline pull-right">
+                                <ul class="list-inline pull-center">
                                     <li><button type="button" class="btn btn-default prev-step">Précédent</button></li>
                                     <li><button type="button" class="btn btn-primary next-step">Oui</button></li>
                                     <li><button type="button" class="btn btn-primary next-step">Non</button></li>
