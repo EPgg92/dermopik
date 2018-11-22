@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Dermopik</title>
 
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -25,7 +25,7 @@
             position: relative;
             }
 
-            .connecting-line {3.1.0/css/bootstrap.min.css
+            .connecting-line {
             height: 2px;
             background: #e0e0e0;
             position: absolute;
@@ -90,7 +90,6 @@
             border-bottom-color: #008c15;
             transition: 0.1s ease-in-out;
             }
-3.1.0/css/bootstrap.min.css
             .wizard li.active:after {
             content: " ";
             position: absolute;
@@ -118,7 +117,6 @@
             position: relative;
             padding-top: 50px;
             }
-3.1.0/css/bootstrap.min.css
             .wizard .tab-pane > ul {
                 position: relative;
                 text-align: center
@@ -134,7 +132,12 @@
             oui {
             background: #008c15
             }
-            @media( max-width : 585px ) {3.1.0/css/bootstrap.min.css
+
+            a {
+                color: #008c15;
+            }
+
+            @media( max-width : 585px ) {
             https://bootsnipp.com/snippets/featured/form-wizard-using-tabs
                 .wizard {
                 width: 90%;
@@ -158,6 +161,11 @@
                 position: absolute;
                 left: 35%;
                 }
+            }
+
+            .write-score {
+                color: #008c15;
+                font-size: 32px;
             }
         </style>
 
@@ -223,7 +231,7 @@
                 qpic += 22;
                 score = q7 * qpic;
                 var ws = document.getElementById("write-score");
-                ws.textcontent = score;
+                alert(score);
              });
         </script>
     </head>
@@ -295,6 +303,28 @@
                         <div class="tab-content">
                             <div class="tab-pane active" role="tabpanel" id="step1">
                                 <h3>Question 1</h3>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h3>Sexe</h3>
+                                        <form>
+                                          <div class="radio">
+                                            <label><input type="radio" name="optradio" checked>Féminin</label>
+                                          </div>
+                                          <div class="radio">
+                                            <label><input type="radio" name="optradio">Masculin</label>
+                                          </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h3>Age</h3>
+                                        <div class="form-group row">
+                                          <div class="col-6">
+                                            <input class="form-control" type="text" id="example-text-input">
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <p>  Votre peau vous démange-t-elle fréquemment ? </p>
                                 <ul class="list-inline pull-center text-center">
                                     <li><button type="button" class="btn btn-success next-step oui oui1">Oui</button></li>
@@ -310,6 +340,7 @@
                                     <li><button type="button" class="btn btn-danger next-step non">Non</button></li>
                                 </ul>
                                 <div class="text-center">
+                                    <p class="write-score"></p>
                                     <img src="img/patho/coude.png" height="275"  alt="">
                                 </div>
                             </div>
@@ -350,8 +381,31 @@
                                 </div>
                             </div>
                             <div class="tab-pane" role="tabpanel" id="complete">
-                                <h3>Votre score</h3>
-                                <p class="write-score"></p>
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h3>Votre score</h3>
+                                        <p class="write-score text-center">
+
+                                        </p>
+                                        <div class="text-center">
+                                            <button type="button" class="btn btn-success">Imprimer en PDF</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group row">
+                                          <label for="example-text-input" class="col-2 col-form-label">Votre mail</label>
+                                          <div class="col-4">
+                                            <input class="form-control" type="text" id="example-text-input">
+                                          </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="button" class="btn btn-success">Envoyer résultat par mail</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="clearfix"></div>
                         </div>
