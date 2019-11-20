@@ -1,4 +1,5 @@
-# dermotik
+<div style="text-align:center"><img src="dermapik7.jpg" /></div>
+
 ## Innover au service de la discipline pharmaceutique de demain.
 
 Hackathon proposé par les Entretiens Galiens.
